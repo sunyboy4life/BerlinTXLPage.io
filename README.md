@@ -1,5 +1,7 @@
-<link rel="stylesheet" href="<layout.css>" />
 # HeatHub TXL
+
+<link rel="stylesheet" href="<layout.css>" />
+<script src="path/to/md-gallery.js"></script>
 
 The HeatHub Dashboard for heat meter data for Berlin TXL enables the partner to gain a transparent overview of energy consumption and capture derived information such as CO2 emissions.
 
@@ -25,10 +27,26 @@ Heat meters (HM) are devices that measure energy consumption for heating and coo
 
 ### Workshop/Ideation
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild2.png"/>
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild2.png" height="700" />
   <figcaption> <b>FIGURE 2:</b> The illustration provides an overview of the workshop progression, showcasing the evolution of visualization from simple to complex prototypes.</figcaption>
 </figure>
 
-#content figcaption {
-  font-size: 12px;
-}
+<div class="gallery gallery-cols-3">
+    <figure>
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.0.png" width="70" />
+        <figcaption>Image 1</figcaption>
+    </figure>
+    <figure>
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.1.png" width="70" />
+        <figcaption>Image 2</figcaption>
+    </figure>
+    <figure>
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.2.png" width="70" />
+        <figcaption>Image 2</figcaption></a>
+    </figure>
+    <figure>
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.3.png" width="70" />
+        <figcaption>Image 2</figcaption></a>
+    </figure>
+</div>
+
