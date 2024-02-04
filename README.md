@@ -206,6 +206,7 @@ Figma is a collaborative online design tool that allows teams to work together o
 Analyzing the functions of Figma reveals clear pros and cons. The collaboration capabilities and real-time editing enhance efficiency and the exchange of ideas but may also lead to potential conflicts or uncertainties. By examining the reasons for changes, the persistence of certain aspects, and analyzing the pros and cons, we were able to create a balanced and effective design process that meets the requirements and expectations. Our product went through various design processes. Some elements remained unchanged throughout the process as they proved to be particularly effective or aesthetically pleasing, while other elements were carefully reconsidered, either discarded or adjusted.
 
 **The first Ideas:**
+<p></p>
 The initial considerations regarding the representation of features led to two main options. The uncertainty about which option was the best determined the beginning of the design process. Now, let's delve into the details of these two options:
 
 1. Navbar with Map View as the Homepage
@@ -218,17 +219,20 @@ The initial considerations regarding the representation of features led to two m
 
 The idea was to create a homepage with a prominent interactive map view. Various elements could be accessed through a navigation bar (Navbar). Alternatively, upon selecting a building, the relevant information could appear on the page below the map. The option of a login was considered but dismissed at this point, as it was not intended to display individual personal data.
 
+2. Dashboard
+
+The second option was a dashboard where all elements are directly presented, with the map still being prominent. All elements should interact with each other, particularly in terms of their connections. The dashboard allowed displaying all components with just one click. The only adjustable parameter was the timeframe. Interaction between elements was facilitated through selecting the timeframe and the building.
+<p></p>
+In addition to these considerations, the decision was made to use "Small Multiples" to represent the energy consumption of heat meters (WMZ) individually or collectively. Small Multiples are a visualization technique where multiple small graphics of the same chart are arranged in a matrix, allowing for quick and effective comparisons.
+
+In the top right of the dashboard, the power of each WMZ in the building is depicted. This decision was made to enable a detailed yet comprehensive visualization of energy consumption.
+   
 <figure>
   <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild11.png" width="700" />    
   <figcaption><b>FIGURE 11:</b> Dashboard design</figcaption>
 </figure>
 <p></p>
 
-The second option was a dashboard where all elements are directly presented, with the map still being prominent. All elements should interact with each other, particularly in terms of their connections. The dashboard allowed displaying all components with just one click. The only adjustable parameter was the timeframe. Interaction between elements was facilitated through selecting the timeframe and the building.
-
-In addition to these considerations, the decision was made to use "Small Multiples" to represent the energy consumption of heat meters (WMZ) individually or collectively. Small Multiples are a visualization technique where multiple small graphics of the same chart are arranged in a matrix, allowing for quick and effective comparisons.
-
-In the top right of the dashboard, the power of each WMZ in the building is depicted. This decision was made to enable a detailed yet comprehensive visualization of energy consumption.
 
 <figure>
   <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild12.png" width="700" />    
