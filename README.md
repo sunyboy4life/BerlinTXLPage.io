@@ -7,7 +7,7 @@ The HeatHub Dashboard for heat meter data for Berlin TXL enables the partner to 
 
 <div id="content">
   <figure>
-    <img style="float: center" src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild1.png" width="700" />
+    <img style="float: center" src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild1.png" width="700" />
     <p>  </p>
     <figcaption><b>FIGURE 1:</b> The illustration depicts the HeatHub TXL Dashboard, an interactive platform for analyzing heat consumption on the premises of the former Berlin-Tegel Airport (TXL).</figcaption>
   </figure>
@@ -27,25 +27,25 @@ Heat meters (HM) are devices that measure energy consumption for heating and coo
 
 ### Workshop/Ideation
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild2.png" height="700" />
+  <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild2.png" height="700" />
   <figcaption> <b>FIGURE 2:</b> The illustration provides an overview of the workshop progression, showcasing the evolution of visualization from simple to complex prototypes.</figcaption>
 </figure>
 
 <div class="slide-container">
     <div class="mySlides">
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.0.png?raw=true" style="width:100%">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.0.png" style="width:100%">
     </div>
     <div class="mySlides">
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.1.png?raw=true" style="width:100%">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.1.png" style="width:100%">
     </div>
     <div class="mySlides">
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.2.png?raw=true" style="width:100%">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.2.png" style="width:100%">
     </div>
     <div class="mySlides">
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.3.png?raw=true" style="width:100%">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.3.png" style="width:100%">
     </div>
-    
 </div>
+
 
 ~~Bilder als Galerie~~
 
@@ -55,7 +55,7 @@ At the outset, the application presents the user with a clear choropleth map of 
 The subdivision allows users to examine the different parts of the airport more closely. In this view, each of the four areas is color-coded to indicate the current energy consumption. For instance, an area is depicted in green if it has low energy consumption and in red if the consumption is high. This creates a sort of heatmap within the visualization.
 
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild3.png" width="70" />
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild3.png" width="80%" />
   <figcaption><b>FIGURE 3:</b> The illustration depicts the user interaction process, wherein a user selects a specific area on the <b>HeatHub</b> map.</figcaption>      
 </figure>
 
@@ -64,7 +64,7 @@ When the user selects a specific area or zooms into a particular zone, there is 
 At a more detailed zoom level, the user can then access very specific information about a particular building.
 
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild4.png" width="70" />
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild4.png" width="80%" />
   <figcaption><b>FIGURE 4:</b> The illustration illustrates the next step in the interaction process after the user has selected a specific building on the HeatHub map.</figcaption>      
 </figure>
 <p></p>
@@ -83,10 +83,10 @@ The second chart is a line chart representing energy consumption over time in re
 Overall, this visualization offers an interactive way to analyze energy consumption at the former Berlin-Tegel Airport, taking into account spatial distribution, building size, time, and weather. This facilitates a thorough examination and analysis of data regarding various aspects of energy consumption on the airport grounds.
 
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-5.png" width="70" />   
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-5.png" width="80%" />   
 </figure>
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-6.png" width="70" />    
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-6.png" width="80%" />    
 </figure>
 <p></p>
 
@@ -113,14 +113,14 @@ The size of buildings at the airport is another crucial factor. The visualizatio
 **Classification of Complexity:**
 After examining Dimension D2 in the Urban Data Visualization (UDV) Card Deck, we evaluated our HeatHub Dashboard in terms of task complexity. The spectrum ranges from "simple" to "complex."
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild7.png" width="70" />    
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild7.png" width="80%" />    
   <figcaption><b>FIGURE 7: </b>The illustration clarifies the position of the HeatHub Dashboard on the complexity scale. With a focus on experienced users who regularly interact with the data, the dashboard leans more towards the complex end of the scale.</figcaption>
 </figure>
 <p></p>
 
 In classifying our initial interface, we particularly considered the user group. Since data access is restricted to authorized users with credentials, and these users regularly interact with the interface, we opted for the classification of "complex."
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild8.png" width="70" />    
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild8.png" width="80%" />    
   <figcaption><b>FIGURE 8:</b> Dimension D2 in Urban Data Visualization (UDV)</figcaption>
 </figure>
 <p></p>
@@ -137,7 +137,7 @@ The flexibility of the complex interface allows dynamic adaptation to different 
 This classification contributes to maximizing user-friendliness for the target audience while providing comprehensive analysis capabilities.
 
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild9.png" width="70" />    
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild9.png" width="80%" />    
   <figcaption><b>FIGURE 9:</b> The illustration depicts the developmental trajectory of the initial concept for the HeatHub Dashboard. From the original conception, which included spatial zoom and a dynamic map, to the paper prototype. The visualization highlights the iterative process where targeted visualizations can be accessed through simple clicks on the map.</figcaption>
 </figure>
 <p></p>
@@ -294,7 +294,7 @@ The interaction between the date picker and the time range picker was strategica
 <p></p>
 This integration allowed precise control over the displayed timeframe and ensured effective and user-friendly interaction with the information on the map. The info button complemented this functionality by providing general information about the HMs, offering users comprehensive context.
 <figure>
-  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild15.png" width="100" />    
+  <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild15.png" width="70%" />    
   <figcaption><b>FIGURE 15:</b> Calendar view for selecting a timeframe.</figcaption>
 </figure>
 <p></p>
