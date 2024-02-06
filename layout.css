@@ -1,3 +1,9 @@
 #content figcaption {
   font-size: 12px;
 }
+.mySlides {
+  display: none;
+}
+.slide-container {
+  width: 100%; text-align: center;
+}
