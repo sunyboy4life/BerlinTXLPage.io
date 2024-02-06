@@ -96,17 +96,17 @@ The visualization aims to enable spatial zooming, dynamically displaying heat me
 
 **What factors influence heat meter data?**
 
-1.Energy Efficiency Class:
+1. Energy Efficiency Class:
 The visualization takes into account the energy efficiency class of individual buildings or areas at the former airport. This allows users to analyze energy consumption in relation to energy efficiency and identify optimization potential. For example, the visualization shows how energy-efficient buildings compare to less efficient ones.
 <p></p>
 2. Weather:
 Weather data is a crucial factor influencing energy consumption. The visualization may display real-time weather data, including temperature and other relevant parameters, to help users analyze the connection between weather and energy consumption.
 <p></p>
-3.Employees:
+3. Employees:
 The number of employees in different buildings or areas of the airport can significantly impact energy consumption. The visualization includes employee count data that can be considered in conjunction with energy consumption, allowing for the determination of energy consumption per capita.
 <p></p>
 
-4.Building Size:
+4. Building Size:
 The size of buildings at the airport is another crucial factor. The visualization allows users to display the size of buildings or areas and relate energy consumption to building size.
 
 ### Complexity Assessment in the HeatHub Dashboard
@@ -201,6 +201,7 @@ Overall, a map dashboard enables a dynamic and flexible presentation of data, pa
 
 ### Prototype of the HeatHub Dashboard with Figma:
 **What is Figma?**
+<p></p>
 Figma is a collaborative online design tool that allows teams to work together on the creation of graphics, user interfaces, and prototypes. It provides features for design, real-time editing, commenting, and prototyping. This makes it particularly effective for designing digital products and collaborating in distributed teams. For us, Figma has proven to be an indispensable tool for design exploration, and in this context, we now look at the individual process stages in which we have used it. The focus is on the reasons for changes, why certain aspects remained unchanged, and the advantages and disadvantages of specific features.
 
 Analyzing the functions of Figma reveals clear pros and cons. The collaboration capabilities and real-time editing enhance efficiency and the exchange of ideas but may also lead to potential conflicts or uncertainties. By examining the reasons for changes, the persistence of certain aspects, and analyzing the pros and cons, we were able to create a balanced and effective design process that meets the requirements and expectations. Our product went through various design processes. Some elements remained unchanged throughout the process as they proved to be particularly effective or aesthetically pleasing, while other elements were carefully reconsidered, either discarded or adjusted.
@@ -266,6 +267,7 @@ Therefore, committing to a dashboard view was a strategic decision to create a c
 <p></p>
 
 **Change in the representation of the consumed energy of the Heat Meters**
+<p></p>
 For the following reasons, we opted for a Pie Chart to represent the consumed energy of the Heat Meters.
 
 1. Flexibility in the number of Heat Meters (HM):
@@ -298,6 +300,7 @@ This integration allowed precise control over the displayed timeframe and ensure
 <p></p>
 
 **New Color Scheme**
+<p></p>
 A unified color scheme has been introduced to make the entire dashboard more cohesive and aesthetically pleasing. This color scheme is applied to various elements such as backgrounds, buttons, text, and charts. The harmony in color design contributes to a pleasant user experience and enhances visual consistency.
 Additionally, it now also depicts which buildings have been selected.
 <figure>
