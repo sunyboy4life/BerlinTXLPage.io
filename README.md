@@ -31,19 +31,20 @@ Heat meters (HM) are devices that measure energy consumption for heating and coo
   <figcaption> <b>FIGURE 2:</b> The illustration provides an overview of the workshop progression, showcasing the evolution of visualization from simple to complex prototypes.</figcaption>
 </figure>
 
-<div>
-    <figure>
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.0.png" width="70" />
-    </figure>
-    <figure>
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.1.png" width="70" />
-    </figure>
-    <figure>
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.2.png" width="70" />
-    </figure>
-    <figure>
-        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.3.png" width="70" />
-    </figure>
+<div class="slide-container">
+    <div class="mySlides">
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.0.png?raw=true" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.1.png?raw=true" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.2.png?raw=true" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <img src="https://github.com/sunyboy4life/BerlinTXLPage.io/blob/main/assets/user/Bild-2.3.png?raw=true" style="width:100%">
+    </div>
+    
 </div>
 
 ~~Bilder als Galerie~~
