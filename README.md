@@ -105,7 +105,6 @@ Weather data is a crucial factor influencing energy consumption. The visualizati
 3. Employees:
 The number of employees in different buildings or areas of the airport can significantly impact energy consumption. The visualization includes employee count data that can be considered in conjunction with energy consumption, allowing for the determination of energy consumption per capita.
 <p></p>
-
 4. Building Size:
 The size of buildings at the airport is another crucial factor. The visualization allows users to display the size of buildings or areas and relate energy consumption to building size.
 
