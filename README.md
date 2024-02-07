@@ -316,7 +316,36 @@ Additionally, it now also depicts which buildings have been selected.
 </figure>
 <p></p>
 
-~~hier muss noch der Text geschrieben und ergänzt werde~~
+In this section, we will now delve into our final product. However, before we dive into the details, we would like to highlight the last adjustments that have further improved this product.
+
+The first significant adjustment concerns the visualization of our data. Originally, a classic Pie Chart was planned, but after careful consideration, we opted for a Sunburst Chart. The Sunburst not only provides an aesthetically pleasing representation but also enables a deeper analysis and understanding of our data. The hierarchical structure of the Sunburst allows us to divide complex data into clearly structured segments, thus conveying relationships in an intuitive manner. This makes the Sunburst Chart an extremely effective visualization method that helps our users quickly identify relevant patterns and trends.
+
+The second adjustment concerns the selection of time periods. Originally, a more complex selection process was planned, but we ultimately opted for a simple Datepicker. Why? A Datepicker provides a user-friendly and straightforward way to select the desired time frame. Through direct interaction with the calendar, users can quickly and precisely set their desired time frame without having to deal with complicated settings. This simplicity significantly enhances the user experience and makes navigating through the data a pleasant and efficient task.
+
+**Info Button:**
+Above the logo, an info field opens, providing general information on heat meters. This info field serves as a quick source for basic insights into the topic, allowing users to quickly educate themselves on heat meters.
+
+**Info Field:**
+Furthermore, we have successfully implemented the right field, intended as an info field. The initial state of this field presents general information on the heat meters in the buildings. However, we have designed it to adapt its text according to the selection, providing additional information to meet the users' needs. This dynamic adjustment allows our users to delve deeper into the subject and receive specific details relevant to their individual selection.
+
+**Map:**
+Our map view offers a comprehensive overview of the entire site. With this feature, you have the opportunity to explore the terrain in its entirety while selecting and deselecting individual buildings or heat meters as needed. The map view provides an interactive experience that allows you to navigate the terrain effortlessly.
+
+**Sunburst Chart:**
+In our view, the Sunburst Chart was the best way to illustrate the consumption of individual buildings and simultaneously show how much energy the respective heat meters in these buildings consume.
+
+Through the radial arrangement of the Sunburst Chart, we not only gain an overview of total consumption but also detailed insights into the hierarchy of consumption data. Each ring represents a level of consumption, ranging from total consumption figures to the specific consumption values of individual heat meters in the respective buildings.
+
+This hierarchical representation enables us to identify patterns and trends at a glance and identify relationships between the consumption values of buildings and individual heat meters. In this way, we can make informed decisions to effectively optimize energy consumption and efficiently utilize resources.
+
+**Line Chart & Small Multiples:**
+Line charts are a proven tool for representing data over time. They show trends and patterns in a clear and easily understandable manner. But what are Small Multiples? In Small Multiples, all heat meters are displayed in a compact form, with the performance of each meter highlighted. This representation allows us to obtain a comprehensive overview of the entire data landscape without losing sight of the details.
+
+The Small Multiples are dynamically adjusted when a building is selected on the map. In this case, the corresponding line charts of the heat meters in this building are highlighted with a frame, supporting analysis.
+
+Both through the line chart and through the Small Multiples, you have the opportunity to select and deselect heat meters as desired. This allows for a tailored analysis and targeted examination of specific data points.
+
+If no building is selected, all heat meters are displayed in the large line chart. Depending on the selection, the corresponding meters are then displayed, ensuring a flexible and customizable visualization.
 
 ### Implementation
 ~~hier muss noch der Text geschrieben und ergänzt werde~~
