@@ -1,218 +1,260 @@
-<!doctype html>
-<html lang="en" data-theme="dark">
-
+<!DOCTYPE html>
+<html lang="de">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Markdown Pages - a simple template for Markdown-based sites on GitHub Pages">
-	<link rel="shortcut icon" type="image/png" href="assets/user/favicon.png"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.4.4/pico.min.css" integrity="sha512-RAtoAGzPS5T5sUpCfVpkY5EHHDcqEp26rHYNee0Vx4RT1pxJrt3CWQCVD/ekrPdMowT4ybxYvqClqf9v7oWxYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" id="highlight-styles">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" integrity="sha512-L03kznCrNOfVxOUovR6ESfCz9Gfny7gihUX/huVbQB9zjODtYpxaVtIaAkpetoiyV2eqWbvxMH9fiSv5enX7bw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<title>Markdown Pages</title>
-	<style>
-		/**** pico style overrides *****/
-
-		/* link underlines for a11y */
-		a {
-			text-decoration: underline;
-		}
-
-		/* focus indicator for a11y */
-		[data-theme="dark"] a:focus {
-			outline: 2px solid rgba(225,225,225,0.5);
-    		border-radius: 2px;
-		}
-		
-		[data-theme="light"] a:focus {
-			outline: 2px solid rgba(25,25,25,0.5);
-    		border-radius: 2px;
-		}
-
-		/* adjust contain widths */
-		@media (max-width: 1199px) {
-			.container {
-				max-width: 100%;
-				padding-left: 30px;
-				padding-right: 30px;
-			}
-		}
-
-		@media (max-width: 575px) {
-			.container {
-				padding-left: 16px;
-				padding-right: 16px;
-			}
-		}
-		
-		/* adjust heading margins */
-		h2 {
-			margin-bottom: 1.5rem;
-		}
-
-		/* dark/light mode toggle button */
-		#light-toggle {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			padding: 5px;
-			font-size: 14px;
-			font-weight: 500;
-		}
-
-		/* increase color contrast for a11y */
-		[data-theme="light"] a {
-			color: #0c779a;
-		}
-
-		[data-theme="light"] code {
-			color: rgb(80, 105, 115);
-		}
-
-		[data-theme="dark"] code {
-			color: rgb(135, 150, 160);
-		}
-
-		[data-theme="light"] pre code {
-			color: initial;
-		}
-
-		[data-theme="dark"] pre code {
-			color: initial;
-		}
-
-		[data-theme="light"] a code {
-			color: #80556b !important;
-		}
-
-		[data-theme="dark"] a code {
-			color: #b77a99 !important;
-		}
-
-		[data-theme="light"] .hljs {
-			background: #fcfcfc;
-		}
-		
-		[data-theme="dark"] .hljs {
-			background: #0d1418;
-		}
-
-		[data-theme="light"] .hljs-comment, .hljs-deletion, .hljs-meta {
-			color: #555;
-		}
-
-		[data-theme="dark"] .hljs-comment, .hljs-deletion, .hljs-meta {
-			color: #ccc;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <title>HeatHub TXL</title>
+    <link rel="stylesheet" href="layout.css" />
+    <script src="path/to/md-gallery.js"></script>
+    
 </head>
-
 <body>
-	<main role="main" class="container">
-		<a href="#" role="button" onclick="toggleLight();return false;" id="light-toggle" class="contrast">🌗 Light</a>
-		<div id="insert"></div>
-	</main>
 
-<script type="text/javascript">
 
-// set syntax highlighting theme based on light or dark mode
-function setHighlightTheme(mode) {
-	var link = document.getElementById('highlight-styles');
-	if (mode == "light") {
-		link.href = 'https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/a11y-light.min.css'; 
-	}
-	if (mode == "dark") {
-		link.href = 'https://unpkg.com/@highlightjs/cdn-assets@11.4.0/styles/monokai-sublime.min.css'; 
-	}
-}
+<h1>HeatHub TXL</h1>
 
-// toggle between light and dark mode
-function toggleLight() {
-	var mode = localStorage.getItem("mode");
-	if (mode == "light") {
-		document.documentElement.setAttribute("data-theme", "dark");
-		document.getElementById('light-toggle').innerHTML = "🌗 Light";
-		document.getElementById('light-toggle').style.color = "#333";
-    	localStorage.setItem("mode", "dark");
-		setHighlightTheme("dark");
-	}
-	if (mode == "dark" || mode == null) {
-		document.documentElement.setAttribute("data-theme", "light");
-		document.getElementById('light-toggle').innerHTML = "🌗 Dark";
-		document.getElementById('light-toggle').style.color = "#ddd";
-		localStorage.setItem("mode", "light");
-		setHighlightTheme("light");
-	}
-}
+<p>The HeatHub Dashboard for heat meter data for Berlin TXL enables the partner to gain a transparent overview of energy consumption and capture derived information such as CO2 emissions.</p>
 
-// helper function to grab query string value
-function getParameterByName(name, url = window.location.href) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
+<div id="content">
+    <figure>
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild1.png" alt="HeatHub TXL Dashboard" style="width: 700px;">
+        <figcaption><strong>FIGURE 1:</strong> The illustration depicts the HeatHub TXL Dashboard, an interactive platform for analyzing heat consumption on the premises of the former Berlin-Tegel Airport (TXL).</figcaption>
+    </figure>
+</div>
 
-// build URL for markdown file
-var page = getParameterByName('page');
-if (page) {
-	page = "pages/" + page + ".md"
-} else {
-	page = "README.md";
-}
+<p>The <strong>HeatHub</strong> Dashboard features an interactive map with 3D visualization for a total of 17 buildings on the Berlin TXL site equipped with heat meters. The map allows for detailed monitoring of heat consumption values at the building level. Mini-charts provide precise information, while large visualizations offer a quick and comprehensive overview. A pie chart displays the average energy consumption across all buildings. This intuitive platform provides both detailed insights and a comprehensive overview of heat consumption on the Berlin TXL site.</p>
 
-// request markdown file
-var client = new XMLHttpRequest();
-client.open('GET', page);
-client.onreadystatechange = function() {
-	if (client.readyState == 4 && client.status == 200) {
-		if (client.responseText) {
-			var div = document.getElementById('insert');
-			div.innerHTML += client.responseText;
-			var conv = new showdown.Converter();
-			conv.setOption('tables', 'true');
-			conv.setOption('emoji', 'true');
-			conv.setOption('ghCompatibleHeaderId', 'true');
-			conv.setOption('simpleLineBreaks', 'true');
-			conv.setOption('strikethrough', 'true');
-			conv.setOption('tasklists', 'true');
-			conv.setOption('parseImgDimensions', 'true');
-			//conv.setOption('ghCodeBlocks', 'true');
-			//conv.setOption('openLinksInNewWindow', 'true');
-			
-			// convert markdown to HTML
-			document.getElementById('insert').innerHTML = conv.makeHtml(div.textContent);
+<h3>Our Goals:</h3>
+<p>The "HeatHub TXL" project aims for precise data capture and analysis of energy consumption and CO2 emissions at Berlin Airport TXL. By generating ESG reports, it aims to facilitate transparent communication of sustainability standards and targeted measures for controlling energy consumption. The dashboard serves not only for internal process optimization but also for external communication in the InfoCenter for the public. The overarching goal is to create comprehensive transparency and actively contribute to comprehensive ESG goals (Environmental, Social, and Governance).</p>
 
-			// set title as first h1 plus site title
-			var h1s = document.getElementsByTagName("h1");
-			for (var i = 0; i < h1s.length; i++) {
-			    var h1 = h1s[i];
-			    document.title = h1.innerText + " | " + document.title;
-			}
+<h3>What are heat meters?</h3>
+<p>Heat meters (HM) are devices that measure energy consumption for heating and cooling in buildings. In the context of HeatHub TXL for the former Berlin-Tegel Airport (TXL), data from these meters are captured and analyzed. The collected information provides insights into heat consumption in various buildings on the premises. The data not only cover basic energy consumption patterns but also consider factors such as the energy efficiency class of buildings, weather conditions, number of employees, and building size. Through this holistic analysis, HeatHub TXL provides a transparent overview of energy consumption on the airport grounds and contributes to promoting sustainable decisions and measures for energy optimization.</p>
 
-			// apply syntax highlighting for code blocks
-			hljs.highlightAll();
-		}
-	}
-}
-client.send();
+<h3>Existing Data</h3>
+<p>~~hier muss der Text noch ausformuliert und dann ergänzt werden~~</p>
 
-// get current light/dark mode on page load
-(function () {
-	var mode = localStorage.getItem("mode");
-	if (mode == "light") {
-		document.documentElement.setAttribute("data-theme", "light");
-		document.getElementById('light-toggle').innerHTML = "🌗 Dark";
-		document.getElementById('light-toggle').style.color = "#ddd";
-		setHighlightTheme("light");
-	} else {
-		setHighlightTheme("dark");
-	}
-})();
+<h3>Workshop/Ideation</h3>
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild2.png" alt="Workshop Progression" style="max-width: 100%; height: auto;">
+    <figcaption><strong>FIGURE 2:</strong> The illustration provides an overview of the workshop progression, showcasing the evolution of visualization from simple to complex prototypes.</figcaption>
+</figure>
 
-</script>
+<div class="slide-container">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    <div class="mySlides fade">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.0.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.1.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.2.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-2.3.png" style="width:100%">
+    </div>
+</div>
+
+<h3>Description of Visualizations:</h3>
+<p>At the outset, the application presents the user with a clear choropleth map of the former Berlin-Tegel Airport (TXL). This map is divided into four main areas, with each area representing a specific zone or segment of the premises.</p>
+
+<p>The subdivision allows users to examine the different parts of the airport more closely. In this view, each of the four areas is color-coded to indicate the current energy consumption. For instance, an area is depicted in green if it has low energy consumption and in red if the consumption is high. This creates a sort of heatmap within the visualization.</p>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild3.png" alt="Choropleth Map Interaction" width="80%" />
+    <figcaption><strong>FIGURE 3:</strong> The illustration depicts the user interaction process, wherein a user selects a specific area on the <strong>HeatHub</strong> map.</figcaption>
+</figure>
+
+<p>When the user selects a specific area or zooms into a particular zone, there is a further subdivision of the areas, revealing the buildings. Again, the buildings are color-coded to provide a quick overview of energy consumption.</p>
+
+<p>At a more detailed zoom level, the user can then access very specific information about a particular building.</p>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild4.png" alt="Building Selection on Map" width="80%" />
+    <figcaption><strong>FIGURE 4:</strong> The illustration illustrates the next step in the interaction process after the user has selected a specific building on the HeatHub map.</figcaption>
+</figure>
+
+<p>After selecting a specific building on the <strong>HeatHub</strong> map, charts are presented here depicting the energy consumption and outside temperature for the chosen building over a selectable period. The visualization demonstrates how the user gains detailed insights into consumption data to analyze trends and patterns.</p>
+
+<h3>Possible Data Visualizations including Influencing Factors:</h3>
+<p><strong>Bar Chart with Energy Consumption and Building Size:</strong> As the mouse hovers over an area on the map, the bar chart highlights values for energy consumption and the size of buildings in that area. This allows users to establish a direct connection between energy consumption and the size of buildings in that specific zone.</p>
+
+<p><strong>Line Chart with Energy Consumption and Temperature Over Time:</strong> The second chart is a line chart representing energy consumption over time in relation to temperature. Users can identify trends in energy consumption correlating with temperature fluctuations. This chart provides insights into the relationship between weather conditions and energy consumption.</p>
+
+<p>Overall, this visualization offers an interactive way to analyze energy consumption at the former Berlin-Tegel Airport, taking into account spatial distribution, building size, time, and weather. This facilitates a thorough examination and analysis of data regarding various aspects of energy consumption on the airport grounds.</p>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-5.png" alt="Data Visualization 1" width="80%" />
+</figure>
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild-6.png" alt="Data Visualization 2" width="80%" />
+</figure>
+
+<h3>Analysis and Influencing Factors: Design of the HeatHub Dashboard</h3>
+<p><strong>Spatial Zooming to Dynamically Aggregate Data:</strong> The visualization aims to enable spatial zooming, dynamically displaying heat meter data. Users can zoom into the map of the former airport to select specific areas or buildings and view energy consumption.</p>
+
+<p><strong>What factors influence heat meter data?</strong></p>
+<ul>
+    <li><strong>Energy Efficiency Class:</strong> The visualization takes into account the energy efficiency class of individual buildings or areas at the former airport. This allows users to analyze energy consumption in relation to energy efficiency and identify optimization potential. For example, the visualization shows how energy-efficient buildings compare to less efficient ones.</li>
+    <li><strong>Weather:</strong> Weather data is a crucial factor influencing energy consumption. The visualization may display real-time weather data, including temperature and other relevant parameters, to help users analyze the connection between weather and energy consumption.</li>
+    <li><strong>Employees:</strong> The number of employees in different buildings or areas of the airport can significantly impact energy consumption. The visualization includes employee count data that can be considered in conjunction with energy consumption, allowing for the determination of energy consumption per capita.</li>
+    <li><strong>Building Size:</strong> The size of buildings at the airport is another crucial factor. The visualization allows users to display the size of buildings or areas and relate energy consumption to building size.</li>
+</ul>
+
+<h3>Complexity Assessment in the HeatHub Dashboard</h3>
+<p><strong>Classification of Complexity:</strong> After examining Dimension D2 in the Urban Data Visualization (UDV) Card Deck, we evaluated our HeatHub Dashboard in terms of task complexity. The spectrum ranges from "simple" to "complex."</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild7.png" alt="Complexity Scale" width="80%" />    
+    <figcaption><strong>FIGURE 7:</strong> The illustration clarifies the position of the HeatHub Dashboard on the complexity scale. With a focus on experienced users who regularly interact with the data, the dashboard leans more towards the complex end of the scale.</figcaption>
+</figure>
+
+<p>In classifying our initial interface, we particularly considered the user group. Since data access is restricted to authorized users with credentials, and these users regularly interact with the interface, we opted for the classification of "complex."</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild8.png" alt="UDV Dimension D2" width="80%" />    
+    <figcaption><strong>FIGURE 8:</strong> Dimension D2 in Urban Data Visualization (UDV)</figcaption>
+</figure>
+
+<p><strong>User Orientation:</strong> The complexity is tailored to experienced users familiar with the data structure and analysis capabilities. The HeatHub Dashboard offers advanced features for detailed data analysis, utilized by staff to gain precise insights into energy consumption and relevant factors. Opting for higher complexity reflects the requirements and expertise of the target audience.</p>
+
+<p><strong>Training and Efficiency:</strong> Due to the increased complexity, training may be necessary for new users to understand the full range of features. However, for experienced users, the more complex interface provides an efficient and powerful platform for optimizing energy consumption and achieving sustainability goals.</p>
+
+<p><strong>Dynamic Adaptation:</strong> The flexibility of the complex interface allows dynamic adaptation to different analysis needs, ensuring that experienced users can effectively interact with heat meter data.</p>
+
+<p>This classification contributes to maximizing user-friendliness for the target audience while providing comprehensive analysis capabilities.</p>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild9.png" alt="Developmental Trajectory" width="80%" />    
+    <figcaption><strong>FIGURE 9:</strong> The illustration depicts the developmental trajectory of the initial concept for the HeatHub Dashboard. From the original conception, which included spatial zoom and a dynamic map, to the paper prototype. The visualization highlights the iterative process where targeted visualizations can be accessed through simple clicks on the map.</figcaption>
+</figure>
+
+<h3>Considerations on Technology Standards</h3>
+
+<h4>Interactive Functionalities and Depth of Analysis</h4>
+<p>Interactive Zoom and Analysis Functions: The visualization adheres to standards that facilitate effective interaction through zooming into the map and selecting specific areas. This supports differentiated analysis at various detail levels, allowing users to immerse themselves in the data and gain precise insights.</p>
+<p>Introductory Explanation for Different Users: To accommodate the diversity of user experience levels, the visualization provides a brief introductory explanation. This assists beginners in easy navigation, while experts can quickly dive into the analysis.</p>
+<p>Training for Experienced Users: As the visualization is not designed for various user groups and accesses non-public data, it requires users to be trained and experienced. This ensures competent utilization of advanced features.</p>
+<p>Optimization for Web and Touchscreen Surfaces: The visualization is specifically optimized for web and touchscreen surfaces to maximize zoom interaction possibilities in these environments. However, mobile solutions are not considered.</p>
+
+<h4>Selection of Visualization and Data</h4>
+<p>Consideration of Different Needs: The visualization was developed to address the diverse needs and interests of various urban stakeholders. This includes users, TP employees, visitors to the InfoCenter, investors, and tenants of the InfoCenter.</p>
+<p>User-Friendly Customization Options: Through user-friendly customization options, the visualization provides flexible use to meet the individual needs of different users.</p>
+<p>Exclusively Using Real Data: The visualization is based solely on real data to ensure the authenticity and relevance of the presented information.</p>
+<p>Standardized Shapes and Symbols: The use of standardized shapes and symbols facilitates data interpretation for a broad audience without requiring extensive expertise. For example, color codings are used to highlight specific information.</p>
+<p>Consideration of Nuanced Information: The visualization captures nuanced and meaningful information, especially in deeper analysis at the building level. It integrates relevant metrics at this detailed level, enabling subtle but significant insights that might be overlooked at higher levels. This promotes a more thorough analysis and informed decision-making regarding urban development.</p>
+
+<h3>Summary of the Initial Idea and Challenges:</h3>
+<p>The visualization of the former Berlin-Tegel Airport (TXL) provides a detailed insight into energy consumption on the premises. The starting point is a choropleth map dividing the area into four main zones, each representing a specific zone with color coding indicating the current energy consumption, creating a heatmap effect. By selecting or zooming in, buildings become visible, also color-coded to illustrate energy consumption. In addition, charts provide information on factors such as energy efficiency class, weather, employee count, and building size in relation to energy consumption.</p>
+<p>The visualization allows for a comprehensive representation of energy consumption at the airport, considering various influencing factors. The zoom function enables users to dive into the data and analyze it at different detail levels, particularly beneficial for experienced and trained users. However, there are some challenges to address: the classified "complex" visualization may limit usability for beginners and requires training. Additionally, security measures should be implemented as the data is not publicly accessible. Despite these challenges, the visualization offers a valuable opportunity to analyze energy consumption at Berlin-Tegel Airport and consider various influencing factors. Adjusting complexity and access restrictions is crucial to maximize user-friendliness and overall utility.</p>
+
+<h3>Why a Map Dashboard is the Ideal Choice!</h3>
+<p>Spatial Context: A dashboard with a map is particularly effective in emphasizing spatial context. In our case, analyzing heat meter data on the former Berlin-Tegel Airport (TXL) premises, it is crucial to depict energy consumption in relation to the spatial distribution of buildings. A map visualization allows users to specifically view areas or buildings and understand energy consumption on a geographical level.</p>
+<p>Interactive Exploration: A dashboard provides the opportunity for interactive exploration of data. Users can zoom into the map, select specific areas, and retrieve detailed information. This interactivity allows for flexible and individualized analysis, giving users control over their exploration.</p>
+<p>Comprehensive Overview: With a map dashboard, various data and influencing factors can be simultaneously displayed. This provides a comprehensive overview of energy consumption on the airport premises. Instead of a linear narrative structure, users have the opportunity to understand the relationship between different factors and delve deeper into the analysis if they wish.</p>
+<p>Real-time Updates: Using a dashboard makes it easier to provide real-time updates or regular data refreshes. This is especially important when continuously new information about energy consumption on the airport premises becomes available.</p>
+<p>Flexibility for Different Users: A dashboard offers flexibility for various user profiles. Both beginners and experienced users can utilize the visualization by navigating to different detail levels. This contributes to making the application accessible to a broader audience.</p>
+<p>Overall, a map dashboard enables a dynamic and flexible presentation of data, particularly suitable for complex spatial contexts and comprehensive analyses. It provides a platform that is both informative and interactive, allowing users to better understand energy consumption on the airport premises and promote sustainable decision-making.</p>
+
+<h3>Prototype of the HeatHub Dashboard with Figma:</h3>
+<p><strong>What is Figma?</strong> Figma is a collaborative online design tool that allows teams to work together on the creation of graphics, user interfaces, and prototypes. It provides features for design, real-time editing, commenting, and prototyping. This makes it particularly effective for designing digital products and collaborating in distributed teams. For us, Figma has proven to be an indispensable tool for design exploration, and in this context, we now look at the individual process stages in which we have used it. The focus is on the reasons for changes, why certain aspects remained unchanged, and the advantages and disadvantages of specific features.</p>
+
+<h4>The first Ideas:</h4>
+<p>The initial considerations regarding the representation of features led to two main options:</p>
+
+<ol>
+    <li>Navbar with Map View as the Homepage</li>
+</ol>
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild10.png" width="700" alt="Homepage Design" />    
+    <figcaption><strong>FIGURE 10:</strong> The first design for the homepage</figcaption>
+</figure>
+
+<p>The idea was to create a homepage with a prominent interactive map view. Various elements could be accessed through a navigation bar (Navbar). Alternatively, upon selecting a building, the relevant information could appear on the page below the map.</p>
+
+<p>2. Dashboard</p>
+<p>The second option was a dashboard where all elements are directly presented, with the map still being prominent. All elements should interact with each other, particularly in terms of their connections. The dashboard allowed displaying all components with just one click. The only adjustable parameter was the timeframe. Interaction between elements was facilitated through selecting the timeframe and the building.</p>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild11.png" width="700" alt="Dashboard Design" />    
+    <figcaption><strong>FIGURE 11:</strong> Dashboard design</figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild12.png" width="700" alt="Map View of HeatHub TXL" />    
+    <figcaption><strong>FIGURE 12:</strong> This illustration showcases the map view of HeatHub TXL, with interactive clickable buildings.</figcaption>
+</figure>
+
+<h3>Commitment to one of the two options</h3>
+<p>The decision to commit to a dashboard view was made because this option offered several advantages: Comprehensive representation, Reduction of representations, and Connection of elements. Therefore, committing to a dashboard view was a strategic decision to create a comprehensive, well-connected, and easily understandable visualization. This not only enhanced user-friendliness but also facilitated a more effective analysis of interactions and connections between different elements of the system.</p>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild13.png" width="700" alt="Representation of Heat Meters" />    
+    <figcaption><strong>FIGURE 13:</strong> Changed representation of the Heat Meters</figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild14.png" width="700" alt="Information Field and Navbar" />    
+    <figcaption><strong>FIGURE 14:</strong> Adding information-field and navigation-bar</figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild15.png" width="700" alt="Calendar View" />    
+    <figcaption><strong>FIGURE 15:</strong> Calendar view for selecting a timeframe.</figcaption>
+</figure>
+
+<h4>New Color Scheme</h4>
+<p>A unified color scheme has been introduced to make the entire dashboard more cohesive and aesthetically pleasing. This color scheme is applied to various elements such as backgrounds, buttons, text, and charts. The harmony in color design contributes to a pleasant user experience and enhances visual consistency. Additionally, it now also depicts which buildings have been selected.</p>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild16.png" width="700" alt="New Color Scheme" />    
+    <figcaption><strong>FIGURE 16:</strong> This figure shows the new color scheme.</figcaption>
+</figure>
+
+<h3>Endprodukt</h3>
+<figure>
+    <img src="https://raw.githubusercontent.com/sunyboy4life/BerlinTXLPage.io/main/assets/user/Bild17.png" width="700" alt="Final Product" />    
+    <figcaption><strong>FIGURE 17:</strong> In this illustration, the final end product is presented.</figcaption>
+</figure>
+
+<h3>Implementation</h3>
+<p>The final implementation reflects a comprehensive and user-friendly approach to visualizing energy consumption at Berlin-Tegel Airport. By committing to a dashboard design, we've created a platform that allows for detailed analysis while being accessible to various user groups. The use of Figma facilitated a collaborative design process, enabling us to refine our ideas and produce a visualization tool that meets our objectives of providing insightful, real-time data analysis in an interactive and engaging manner.</p>
+
+<h4>Map</h4>
+<p>The <strong>Map</strong> is based on Mapbox and displays the buildings of the Berlin TXL Airport along with the corresponding heat meters for each building. Users can select either a building or individual heat meters to view specific data related to energy consumption.</p>
+
+<h4>Sunburst Chart</h4>
+<p>The <strong>Sunburst Chart</strong> visualizes the total consumed energy value per building. It comprises two layers: the inner circle shows the percentage value of the building's total energy consumption, and the outer circle represents individual meters associated with the buildings, allowing for a detailed breakdown of energy usage.</p>
+
+<h4>Info Field</h4>
+<p>The <strong>Info Field</strong> provides a general overview when no selection is made, detailing the number of buildings and heat meters present. Hovering over a building on the map updates this field with information about the selected building and its energy consumption. Similarly, hovering over a Small Multiple displays detailed data for the selected heat meter, including its location within the building.</p>
+
+<h4>Small Multiples</h4>
+<p><strong>Small Multiples</strong> display all heat meters in small, individual diagrams. This visualization shows the cumulative value of energy consumption, providing an overview at a glance. Users can select specific heat meters for a more detailed view.</p>
+
+<h4>Detailed Line Diagram</h4>
+<p>The <strong>Detailed Line Diagram</strong> offers an in-depth view of energy consumption over a selected period for a heat meter. It displays all selected heat meters on the dashboard, enabling a comprehensive analysis of energy usage trends and comparisons across different meters.</p>
+
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function changeSlide(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+
 </body>
 </html>
