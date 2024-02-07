@@ -353,5 +353,20 @@ Both through the line chart and through the Small Multiples, you have the opport
 If no building is selected, all heat meters are displayed in the large line chart. Depending on the selection, the corresponding meters are then displayed, ensuring a flexible and customizable visualization.
 
 ### Implementation
-~~hier muss noch der Text geschrieben und ergänzt werde~~
+The final implementation reflects a comprehensive and user-friendly approach to visualizing energy consumption at Berlin-Tegel Airport. By committing to a dashboard design, we've created a platform that allows for detailed analysis while being accessible to various user groups. The use of Figma facilitated a collaborative design process, enabling us to refine our ideas and produce a visualization tool that meets our objectives of providing insightful, real-time data analysis in an interactive and engaging manner.
+
+####Map
+The Map is based on Mapbox and displays the buildings of the Berlin TXL Airport along with the corresponding heat meters for each building. Users can select either a building or individual heat meters to view specific data related to energy consumption.
+
+###Sunburst Chart
+The Sunburst Chart visualizes the total consumed energy value per building. It comprises two layers: the inner circle shows the percentage value of the building's total energy consumption, and the outer circle represents individual meters associated with the buildings, allowing for a detailed breakdown of energy usage.
+
+###Info Field
+The Info Field provides a general overview when no selection is made, detailing the number of buildings and heat meters present. Hovering over a building on the map updates this field with information about the selected building and its energy consumption. Similarly, hovering over a Small Multiple displays detailed data for the selected heat meter, including its location within the building.
+
+###Small Multiples
+Small Multiples display all heat meters in small, individual diagrams. This visualization shows the cumulative value of energy consumption, providing an overview at a glance. Users can select specific heat meters for a more detailed view.
+
+###Detailed Line Diagram
+The Detailed Line Diagram offers an in-depth view of energy consumption over a selected period for a heat meter. It displays all selected heat meters on the dashboard, enabling a comprehensive analysis of energy usage trends and comparisons across different meters.
 
