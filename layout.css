@@ -19,6 +19,11 @@ h1, h3 {
     color: #bb86fc; /* Helle Akzentfarbe für Überschriften */
 }
 
+h4{
+    margin-bottom: 20px;
+    color: #e086fc; /* Helle Akzentfarbe für Überschriften */
+}
+
 p {
     margin-bottom: 10px;
     color: #e0e0e0; /* Heller Text */
