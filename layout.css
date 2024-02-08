@@ -9,6 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    padding: 0 20px; /* Fügt seitliche Abstände hinzu */
     background-color: #121212; /* Dunkler Hintergrund */
     color: #e0e0e0; /* Heller Text */
 }
@@ -26,7 +27,7 @@ p {
 /* Container für den Inhalt */
 #content {
     margin: auto;
-    max-width: 1000px;
+    max-width: 1000px; /* Beibehalten der maximalen Breite */
     background: #1e1e1e; /* Dunkler Hintergrund für den Inhalt */
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Heller Schatten */
