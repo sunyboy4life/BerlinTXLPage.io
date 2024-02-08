@@ -27,16 +27,17 @@
 <p></p>
 <p>The <strong>HeatHub</strong> Dashboard features an interactive map with 3D visualization for a total of 11 buildings on the Berlin TXL site equipped with heat meters. The map allows for detailed monitoring of heat consumption values at the building level. Mini-charts provide precise information, while large visualizations offer a quick and comprehensive overview. A sunburst chart displays the average energy consumption across all buildings. This intuitive platform provides both detailed insights and a comprehensive overview of heat consumption on the Berlin TXL site.</p>
 
-<h3>Our Goals:</h3>
+<h3>Our Goals</h3>
 <p>The "HeatHub TXL" project aims for precise data capture and analysis of energy consumption and CO2 emissions at Berlin Airport TXL. By generating ESG reports, it aims to facilitate transparent communication of sustainability standards and targeted measures for controlling energy consumption. The dashboard serves not only for internal process optimization but also for external communication in the InfoCenter for the public. The overarching goal is to create comprehensive transparency and actively contribute to comprehensive ESG goals (Environmental, Social, and Governance).</p>
 
 <h3>What are heat meters?</h3>
-<p>Heat meters (HM) are devices that measure energy consumption for heating and cooling in buildings. In the context of HeatHub TXL the former Berlin-Tegel Airport (TXL), data from these meters are captured and analyzed. The collected information provides insights into heat consumption in various buildings on the premises. The data not only covers basic energy consumption patterns but also considers factors such as the energy efficiency class of buildings, weather conditions, number of employees, and building size. Through this holistic analysis, HeatHub TXL provides a transparent overview of energy consumption on the airport grounds and contributes to promoting sustainable decisions and measures for energy optimization.</p>
+<p>Heat meters (HM) are devices that measure energy consumption for heating and cooling in buildings. In the context of HeatHub TXL the former Berlin-Tegel Airport (TXL), data from these meters are captured and analyzed. The collected information provides insights into heat consumption in various buildings on the premises. The data not only covers basic energy consumption patterns but also considers factors such as the energy efficiency class of buildings, weather conditions, number of employees, and building size. Through this analysis, HeatHub TXL provides a transparent overview of energy consumption on the airport grounds and contributes to promoting sustainable decisions and measures for energy optimization.</p>
 
 <h3>Existing Data</h3>
 <p>Heat meters are instruments that capture the heat consumption in heating circuits. These measuring devices enable precise consumption recording and facilitate data collection, thereby reducing the effort for reading and evaluation.</p>
 
 <div>Calculation of Heat Quantity</div>
+
 <p>Heat quantity is calculated from the variables "flow rate" and "temperature difference" according to the following formula:</p>
 <p><center><strong>Heat Quantity [kWh] = Heat Coefficient (k) * Volume [m³] * Temperature Difference [°C].</strong></center></p>
 
@@ -46,7 +47,7 @@
     <li>Return Temperature [°C]: The temperature of the heating medium as it returns to the heat generator.</li>
     <li>Flow Rate [m³/h]: The amount of heating medium flowing through the heating circuit per hour.</li>
     <li>Power [kW]: The instantaneous power of heat consumption in kilowatts (kW).</li>
-    <li>Volume [kW]: The volume of the heating medium consumed during a specific period, often measured in kilowatt-hours (kWh).</li>
+    <li>Volume [m³]: The volume of the heating medium consumed during a specific period.</li>
     <li>Energy [kWh]: The consumed heat energy, often cumulated over a specific period, measured in kilowatt-hours (kWh).</li>
 </ul>
 <p></p>
@@ -73,7 +74,7 @@
     <figcaption><strong>FIGURE 2:</strong> The illustration provides an overview of the workshop progression, showcasing the evolution of visualization from simple to complex prototypes.</figcaption>
 </div>
 <p></p>
-<h4>Description of Visualizations:</h4>
+<h4>Description of Visualizations</h4>
 <p>At the outset, the application presents the user with a clear choropleth map of the former Berlin-Tegel Airport (TXL). This map is divided into four main areas, with each area representing a specific zone or segment of the premises.</p>
 
 <p>The subdivision allows users to examine the different parts of the airport more closely. In this view, each of the four areas is color-coded to indicate the current energy consumption. For instance, an area is depicted in green if it has low energy consumption and in red if the consumption is high. This creates a sort of heatmap within the visualization.</p>
@@ -199,12 +200,12 @@
 
 
 <p></p>
-<h3>Summary of the Initial Idea and Challenges:</h3>
+<h3>Summary of the Initial Idea and Challenges</h3>
 <p>The visualization of the former Berlin-Tegel Airport (TXL) provides a detailed insight into energy consumption on the premises. The starting point is a choropleth map dividing the area into four main zones, each representing a specific zone with color coding indicating the current energy consumption, creating a heatmap effect. By selecting or zooming in, buildings become visible, also color-coded to illustrate energy consumption. In addition, charts provide information on factors such as energy efficiency class, weather, employee count, and building size in relation to energy consumption.</p>
 <p>The visualization allows for a comprehensive representation of energy consumption at the airport, considering various influencing factors. The zoom function enables users to dive into the data and analyze it at different detail levels, particularly beneficial for experienced and trained users. However, there are some challenges to address: the classified "complex" visualization may limit usability for beginners and requires training. Additionally, security measures should be implemented as the data is not publicly accessible. Despite these challenges, the visualization offers a valuable opportunity to analyze energy consumption at Berlin-Tegel Airport and consider various influencing factors. Adjusting complexity and access restrictions is crucial to maximize user-friendliness and overall utility.</p>
 
 <p></p>
-<h3>Why a Map Dashboard is the Ideal Choice!</h3>
+<h3>Why a Map Dashboard is the Ideal Choice</h3>
 <p><strong>Spatial Context:</strong></p><p> A dashboard with a map is particularly effective in emphasizing spatial context. In our case, analyzing heat meter data on the former Berlin-Tegel Airport (TXL) premises, it is crucial to depict energy consumption in relation to the spatial distribution of buildings. A map visualization allows users to specifically view areas or buildings and understand energy consumption on a geographical level.</p>
 <p><strong>Interactive Exploration:</strong></p><p> A dashboard provides the opportunity for interactive exploration of data. Users can zoom into the map, select specific areas, and retrieve detailed information. This interactivity allows for flexible and individualized analysis, giving users control over their exploration.</p>
 <p><strong>Comprehensive Overview:</strong></p><p> With a map dashboard, various data and influencing factors can be simultaneously displayed. This provides a comprehensive overview of energy consumption on the airport premises. Instead of a linear narrative structure, users have the opportunity to understand the relationship between different factors and delve deeper into the analysis if they wish.</p>
@@ -216,7 +217,7 @@
 <h4>What is Figma?</h4>
 <p>Figma is a collaborative online design tool that allows teams to work together on the creation of graphics, user interfaces, and prototypes. It provides features for design, real-time editing, commenting, and prototyping. This makes it particularly effective for designing digital products and collaborating in distributed teams. For us, Figma has proven to be an indispensable tool for design exploration, and in this context, we now look at the individual process stages in which we have used it. The focus is on the reasons for changes, why certain aspects remained unchanged, and the advantages and disadvantages of specific features.</p>
 
-<h4>The first Ideas:</h4>
+<h4>First Ideas</h4>
 <p>The initial considerations regarding the representation of features led to two main options:</p>
 
 <p>1. Navbar with Map View as the Homepage</p>
@@ -297,7 +298,7 @@
     <figcaption><strong>FIGURE 17:</strong> In this illustration, the final product is presented.</figcaption>
 </figure>
     
-<h4>Info Button:</h4>
+<h4>Info Button</h4>
 <p>By clicking on the logo, an info field opens, providing general information on heat meters. This info field serves as a quick source for basic insights into the topic, allowing users to quickly educate themselves on heat meters.</p>
 <center>
     <div id="video-container">
@@ -307,7 +308,7 @@
     </div>
 </center>
     
-<h4>Info Field:</h4>
+<h4>Info Field</h4>
 <p>On the top right of our dashboard is an info field. The initial state of this field presents general information on the heat meters in the buildings. However, we have designed it to adapt its text according to the selection, providing additional information to meet the users' needs. This dynamic adjustment allows our users to delve deeper into the subject and receive specific details relevant to their individual selection.</p>
 <center>
     <div id="video-container">
@@ -317,7 +318,7 @@
     </div>
 </center>
     
-<h4>Map:</h4>
+<h4>Map</h4>
 <p>Our map view offers a comprehensive overview of the entire Berlin TXL premises. With this feature, you have the opportunity to explore the premises. in its entirety while selecting and deselecting individual buildings or heat meters as needed. The map view provides an interactive experience that allows an effortlessly navigation.</p>
 <center>
     <div id="video-container">
@@ -327,7 +328,7 @@
     </div>
 </center>
     
-<h4>Sunburst Chart:</h4>
+<h4>Sunburst Chart</h4>
 <p>In our view, the Sunburst Chart was the best way to illustrate the consumption of individual buildings and simultaneously show how much energy the respective heat meters in these buildings consume. Through the radial arrangement of the Sunburst Chart, we not only gain an overview of total consumption but also detailed insights into the hierarchy of consumption data. Each ring represents a level of consumption, ranging from total consumption figures to the specific consumption values of individual heat meters in the respective buildings. This hierarchical representation enables us to identify patterns and trends at a glance and identify relationships between the consumption values of buildings and individual heat meters. In this way, we can make informed decisions to effectively optimize energy consumption and efficiently utilize resources.</p>
 <center>
     <div id="video-container">
@@ -337,7 +338,7 @@
     </div>
 </center>
     
-<h4>Line Chart & Small Multiples:</h4>
+<h4>Line Chart & Small Multiples</h4>
     
 <p>Line charts are a proven tool for representing data over time. They show trends and patterns in a clear and easily understandable manner. But what are Small Multiples? In our context the Small Multiples display all heat meters in a compact form, with the performance of each meter shown. This representation allows us to obtain a comprehensive overview of the entire data landscape without losing sight of the details. The Small Multiples are dynamically adjusted when a building is selected on the map. In this case, the corresponding line charts of the heat meters in this building are highlighted with a frame, supporting the analysis of the users. Through both the line chart and the Small Multiples, you have the opportunity to select and deselect heat meters as desired. This allows for a tailored analysis and targeted examination of specific data points. If no building is selected, all heat meters are displayed in the large line chart. Depending on the selection, the corresponding meters are then displayed, ensuring a flexible and customizable visualization.</p>
 
