@@ -30,7 +30,21 @@
 <p>Heat meters (HM) are devices that measure energy consumption for heating and cooling in buildings. In the context of HeatHub TXL for the former Berlin-Tegel Airport (TXL), data from these meters are captured and analyzed. The collected information provides insights into heat consumption in various buildings on the premises. The data not only cover basic energy consumption patterns but also consider factors such as the energy efficiency class of buildings, weather conditions, number of employees, and building size. Through this holistic analysis, HeatHub TXL provides a transparent overview of energy consumption on the airport grounds and contributes to promoting sustainable decisions and measures for energy optimization.</p>
 
 <h3>Existing Data</h3>
-<p>~~hier muss der Text noch ausformuliert und dann ergänzt werden~~</p>
+<p>Heat meters are instruments that capture the heat consumption in heating circuits. These measuring devices enable precise consumption recording and facilitate data collection, thereby reducing the effort for reading and evaluation.</p>
+
+<div>Calculation of Heat Quantity</div>
+<p>Heat quantity is calculated from the variables "flow rate" and "temperature difference" according to the following formula:</p>
+<p><strong>Heat Quantity [kWh] = Heat Coefficient (k) * Volume [m³] * Temperature Difference [°C].</strong></p>
+
+<div>Recorded Values</div>
+<ul>
+    <li>Forward Temperature [°C]: The temperature of the heating medium as it leaves the heat generator.</li>
+    <li>Return Temperature [°C]: The temperature of the heating medium as it returns to the heat generator.</li>
+    <li>Flow Rate [m³/h]: The amount of heating medium flowing through the heating circuit per hour.</li>
+    <li>Power [kW]: The instantaneous power of heat consumption in kilowatts (kW).</li>
+    <li>Volume [kW]: The volume of the heating medium consumed during a specific period, often measured in kilowatt-hours (kWh).</li>
+    <li>Energy [kWh]: The consumed heat energy, often cumulated over a specific period, measured in kilowatt-hours (kWh).</li>
+</ul>
 
 <h3>Workshop/Ideation</h3>
 <figure>
@@ -100,6 +114,21 @@
     <li><strong>Employees:</strong> The number of employees in different buildings or areas of the airport can significantly impact energy consumption. The visualization includes employee count data that can be considered in conjunction with energy consumption, allowing for the determination of energy consumption per capita.</li>
     <li><strong>Building Size:</strong> The size of buildings at the airport is another crucial factor. The visualization allows users to display the size of buildings or areas and relate energy consumption to building size.</li>
 </ul>
+
+<h3>Usage of Tableau for Data Analysis</h3>
+<p>To visualize the data and gain insights, Tableau was utilized. Tableau is a powerful data visualization software that enables users to comprehend complex data in a simple and meaningful manner.</p>
+
+<p>The provided data was retrieved from an API and subsequently made available as a CSV dump. The data comprises various columns with specific information:</p>
+<ul>
+  <li><strong>entityId</strong>: This is the URN-WMZ identifier that allows associating the information of the heat meter (WMZ) with the master data.</li>
+  <li><strong>time_index and date_observed</strong>: These columns contain information about the time when the data was received (time_index) and the time of observation (date_observed). This facilitates the creation of time series analyses.</li>
+  <li><strong>energy</strong>: This column indicates the consumed heat energy in kilowatt-hours (kWh). It is a cumulative value that increases over time.</li>
+  <li><strong>power</strong>: Here, the instantaneous power of consumption is specified in watts (W).</li>
+  <li><strong>volume and flow</strong>: These columns contain information about the hot water flow, although the unit is not precisely specified.</li>
+  <li><strong>forward_temperature and return_temperature</strong>: These columns are used to calculate energy consumption.</li>
+</ul>
+<p>The available data for the heat meter is accessible starting from August 6, 2023. However, it was decided to use this data only from October 6, 2023, as there may have been measurement errors before that date.</p>
+
 
 <h3>Complexity Assessment in the HeatHub Dashboard</h3>
 <p><strong>Classification of Complexity:</strong> After examining Dimension D2 in the Urban Data Visualization (UDV) Card Deck, we evaluated our HeatHub Dashboard in terms of task complexity. The spectrum ranges from "simple" to "complex."</p>
