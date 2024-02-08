@@ -5,12 +5,11 @@
     padding: 0;
 }
 
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    margin: 20px;
-    padding: 0 20px; /* Fügt seitliche Abstände hinzu */
+    margin: 40px; /* Erhöhter Abstand zum Rand */
+    padding: 0 40px; /* Erhöhte seitliche Abstände */
     background-color: #121212; /* Dunkler Hintergrund */
     color: #e0e0e0; /* Heller Text */
 }
@@ -19,11 +18,6 @@ h1, h3 {
     margin-bottom: 20px;
     color: #bb86fc; /* Helle Akzentfarbe für Überschriften */
 }
-
-h4{
-    margin-bottom: 20px;
-    color: #e086fc;
-}    
 
 p {
     margin-bottom: 10px;
@@ -35,7 +29,7 @@ p {
     margin: auto;
     max-width: 1000px; /* Beibehalten der maximalen Breite */
     background: #1e1e1e; /* Dunkler Hintergrund für den Inhalt */
-    padding: 20px;
+    padding: 40px; /* Erhöhter Innenabstand */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Heller Schatten */
 }
 
@@ -99,7 +93,6 @@ p, figcaption {
     background-color: #333; /* Dunkler Hintergrund für Navigationspfeile */
 }
 
-
 .prev {
     left: 0;
 }
@@ -131,6 +124,24 @@ a {
 
 a:hover {
     text-decoration: underline; /* Optional: Fügt Unterstreichung beim Hover für bessere Erkennbarkeit hinzu */
+}
+
+/* Stil für Stichpunktlisten */
+ul {
+    list-style-type: none; /* Entfernt die Standard-Listensymbole */
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    background: rgba(187, 134, 252, 0.2); /* Hintergrundfarbe für Listenelemente */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li strong {
+    color: #bb86fc; /* Helle Akzentfarbe für das starke Element */
 }
 
 /* Weitere Anpassungen können hier hinzugefügt werden, je nach Bedarf */
