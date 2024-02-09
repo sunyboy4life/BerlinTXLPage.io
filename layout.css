@@ -148,5 +148,11 @@ ul li {
 ul li strong {
     color: #bb86fc; /* Helle Akzentfarbe für das starke Element */
 }
+.team-container, .course-info, .partner-info {
+            margin-bottom: 20px;
+}
+.team-member, .course-detail, .partner-link {
+            margin-left: 20px;
+}
 
 /* Weitere Anpassungen können hier hinzugefügt werden, je nach Bedarf */
